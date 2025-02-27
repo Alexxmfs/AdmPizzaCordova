@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src * data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Pizzaria Admin</title>
+</head>
+<body>
+
+    <div class="app-lista" id="applista">
+        <div class="superior" id="listaPizzas"></div>
+        <div class="inferior">
+            <button class="botao-novo" id="btnNovo">Novo Cadastro</button>
+        </div>
+    </div>
+
+    <div class="app-cadastro" id="appcadastro">
+        <div class="imagem" id="imagem"></div>
+        <div class="form">
+            <div class="form-linha">
+                <div class="form-linha-esq">Pizza:</div>
+                <div class="form-linha-dir">
+                    <input type="text" id="pizza" name="pizza">
+                </div>
+            </div>
+            <div class="form-linha">
+                <div class="form-linha-esq">Preço:</div>
+                <div class="form-linha-dir">
+                    <input type="number" id="preco" name="preco" step="0.01">
+                </div>
+            </div>
+        </div>
+        <div class="botoes">
+            <button class="botao" id="btnFoto">Foto</button>
+            <button class="botao" id="btnSalvar">Salvar</button>
+            <button class="botao" id="btnExcluir">Excluir</button>
+            <button class="botao" id="btnCancelar">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
