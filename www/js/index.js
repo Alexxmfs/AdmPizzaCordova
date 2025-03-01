@@ -36,6 +36,8 @@ document.getElementById("btnFoto").addEventListener("click", () => {
     navigator.camera.getPicture(
         function(imageData) {
             imagemDiv.style.backgroundImage = `url(data:image/jpeg;base64,${imageData})`;
+            imagemDiv.style.backgroundSize = "cover";
+            imagemDiv.style.backgroundPosition = "center";
         },
         function(error) {
             alert("Erro ao tirar foto: " + error);
@@ -87,7 +89,10 @@ function carregarDadosPizza(id) {
     pizzaSelecionadaId = id;
     let pizza = listaPizzasCadastradas[id];
 
-    imagemDiv.style.backgroundImage = pizza.imagem;
+    imagemDiv.style.backgroundImage = `url(data:image/jpeg;base64,${pizza.imagem})`;
+    imagemDiv.style.backgroundSize = "cover";
+    imagemDiv.style.backgroundPosition = "center";
+    
     pizzaInput.value = pizza.pizza;
     precoInput.value = pizza.preco;
 
