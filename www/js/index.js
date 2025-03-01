@@ -133,7 +133,6 @@ document.getElementById("btnSalvar").addEventListener("click", () => {
             }
         );
     } else {
-        // Atualizar pizza existente
         data.pizzaid = listaPizzasCadastradas[pizzaSelecionadaId]._id;
         cordova.plugin.http.put(
             "https://pedidos-pizzaria.glitch.me/admin/pizza/",
