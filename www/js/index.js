@@ -1,6 +1,6 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 
-const PIZZARIA_ID = "pizzaria_do_ze";
+const PIZZARIA_ID = "pizzaria_do_alekinho";
 let listaPizzasCadastradas = [];
 
 const applista = document.getElementById("applista");
